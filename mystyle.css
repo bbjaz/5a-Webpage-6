@@ -1,0 +1,120 @@
+#chicken {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  margin: auto;
+  width: 15%;
+  top: 100px;
+}
+
+#head {
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  width: 200px;
+  height: 200px;
+  background: #ffe432;
+  border-radius: 50%;
+}
+
+#body {
+  position: absolute;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  background: #ffe432;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#beak {
+  position: absolute;
+  top: 30px;
+  left: 185px;
+  width: 20px;
+  height: 20px;
+  background: orange;
+  transform: skewY(-25deg);
+  transform: rotate(35deg);
+}
+
+#eye {
+  position: absolute;
+  top: 25px;
+  left: 150px;
+  width: 15px;
+  height: 15px;
+  background: #FFF;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#eyelid {
+  position: absolute;
+  top: 15px;
+  left: 150px;
+  width: 15px;
+  height: 15px;
+  background: #ffe432;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: eyeblink 2s infinite;
+}
+
+#pupil {
+  position: absolute;
+  top: 28px;
+  left: 153px;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+}
+
+#wing {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  width: 95px;
+  height: 70px;
+  background: #f3da30;
+  border-radius: 50%;
+  animation-name: flap;
+  animation-duration: .5s;
+  animation-play-state: inherit;
+  animation-iteration-count: infinite;
+}
+
+@keyframes eyeblink {
+  0% {top: 0px;}
+  50% {top: 20px;}
+  100% {top: 0px;}
+}
+
+@keyframes flap {
+  0% {top:100px;}
+  50% {top:130px;}
+  100% {top:100px;}
+}
+
+#tail {
+  position: absolute;
+  top: 100px;
+  left: -15px;
+  width: 50px;
+  height: 70px;
+  background: #ffe432;
+  border-radius: 50%;
+  transform: rotate(95deg);
+}
+
+#feet {
+  position: absolute;
+  top: 215px;
+  left: 50px;
+  width: 40px;
+  height: 70px;
+  background: orange;
+  border-radius: 50%;
+  transform: rotate(120deg);
+}
